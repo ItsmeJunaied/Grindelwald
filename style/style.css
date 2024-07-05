@@ -106,7 +106,7 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .fa-solid.fa-play {
@@ -121,7 +121,8 @@ div {
     width: 70px;
     height: 70px;
     border-radius: 100%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);}
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
 
 
 /* Style the banner text */
@@ -139,7 +140,7 @@ div {
 .banner-text-woods {
     color: #FFF;
     text-align: center;
-    font-family: "Boska Variable";
+    font-family: 'Boska', serif;
     font-size: 262px;
     font-style: normal;
     font-weight: 400;
@@ -162,7 +163,7 @@ div {
     left: 50%;
     transform: translateX(-50%);
     color: #FFF;
-    font-family: "Boska Variable";
+    font-family: 'Boska', serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -186,6 +187,81 @@ div {
     text-align: center;
 }
 
+
+/* Style for the info section */
+.info-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 150px;
+}
+
+/* Style for the header */
+.info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.info-header-image img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Position image at the start */
+.info-header-image {
+    align-self: flex-start;
+}
+
+.info-intro p {
+    width: 609px;
+    color: #1B3936;
+    font-family: 'Boska', serif;
+    font-size: 18px;
+    text-align: start;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Style for the details section */
+.info-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.info-detail {
+    text-align: center;
+}
+
+.info-detail p {
+    color: #1B3936;
+    font-family: 'Boska', serif;
+    font-size: 18px;
+    /* Adjust as needed */
+    font-weight: 400;
+}
+
+.info-detail h1 {
+    color: #1B3936;
+    font-family: 'Boska', serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.nature-image img {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     .navbar {
