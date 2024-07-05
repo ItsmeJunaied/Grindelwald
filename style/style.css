@@ -1,6 +1,6 @@
 body,
 h1,
-div {
+div, section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -255,7 +255,8 @@ div {
 
 .about-section {
     background-color: #1B3936;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 300px;
     position: relative;
     text-align: center;
 }
@@ -351,6 +352,24 @@ div {
 
 .about-text p span {
     color: #fff;
+}
+
+
+.svg-container {
+    fill: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 200px;
+    /* padding-bottom: -10px; */
+    margin-bottom: -10px;
+    opacity: 100%;
+}
+
+.about-section {
+    position: relative;
+    overflow: hidden;
 }
 
 
