@@ -1,0 +1,206 @@
+body,
+h1,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #1B3936;
+    height: 100vh;
+}
+
+/* Style the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    background-color: transparent;
+    color: white;
+}
+
+/* Style the header and links sections */
+.navbar-header,
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-logo img {
+    height: 32.802px;
+    flex-shrink: 0;
+}
+
+/* Style the h1 tags within header and links sections */
+.navbar-header h1,
+.navbar-links h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Switzer Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Add specific margins to Home and Reserves */
+.navbar-header h1:first-child {
+    margin-left: 145px;
+}
+
+.navbar-links h1:last-child {
+    margin-right: 81px;
+}
+
+
+/* Style the logo section */
+.navbar-logo img:first-child {
+    width: 29.949px;
+    height: 32.802px;
+}
+
+.navbar-logo img:last-child {
+    width: 135px;
+    height: 33px;
+}
+
+
+/* Style the banner content */
+.banner-content {
+    text-align: center;
+    color: #FFF;
+}
+
+/* Style the banner image container */
+.banner-image-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 100px;
+}
+
+/* Style the banner image */
+.banner-image {
+    width: 570px;
+    height: 570px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the green round border */
+.banner-border {
+    width: 1188px;
+    height: 1188px;
+    border-radius: 1188px;
+    border: 2px dashed var(--Screamin-Green, #75FF69);
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(11.125deg);
+    z-index: 0;
+}
+
+.banner-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fa-solid.fa-play {
+    margin-top: 150px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #1B3936;
+    background-color: #75FF69;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);}
+
+
+/* Style the banner text */
+/* Style the banner text */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner-text-cosy,
+.banner-text-cabin,
+.banner-text-woods {
+    color: #FFF;
+    text-align: center;
+    font-family: "Boska Variable";
+    font-size: 262px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.765px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.banner-text-cabin {
+    color: #75FF69;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Style the "In The" span */
+.banner-text-span-middle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    font-family: "Boska Variable";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+/* Style the banner description */
+.banner-description {
+    width: 570px;
+    margin-top: 20px;
+    font-family: "Switzer Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-header,
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar-logo {
+        margin: 10px 0;
+    }
+}
