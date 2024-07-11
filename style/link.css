@@ -1,0 +1,55 @@
+.link-section {
+    display: flex;
+    justify-content: space-between; /* Adjust space between cards */
+    align-items: center; /* Center items vertically */
+    /* Adjust padding as needed */
+}
+
+.link-card {
+    flex: 1; /* Make each card take equal width */
+    height: 320px;
+    flex-shrink: 0;
+    background-color: #1B3936;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    margin: 0; /* Add some margin between cards */
+}
+
+.link-card:hover {
+    background-color: #75FF69;
+}
+
+.link-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.link-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: flex-direction 0.3s ease;
+}
+
+.link-card:hover .link-content {
+    flex-direction: column-reverse;
+}
+
+.link-content h1, .link-content p {
+    margin: 0;
+    color: white; /* Text color for better visibility */
+}
+
+.link-icon {
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover .link-icon {
+    transform: rotate(45deg);
+}

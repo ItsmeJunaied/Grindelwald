@@ -1,0 +1,62 @@
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 80px;
+    align-items: center;
+    padding: 100px 100px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.contact-text h1 {
+    color: #1B3936;
+    font-family: 'Boska', serif;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.contact-text p {
+    color: #1B3936;
+    font-family: "Switzer Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-button {
+    color: #1B3936;
+    text-align: justify;
+    font-family: "Switzer Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 1px solid #1B3936;
+    border-radius: 100%;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.contact-button:hover {
+    background-color: #f0f0f0;
+    height: 200px;
+}
+
+.contact-image img {
+    width: 203px;
+    height: 276.08px;
+    flex-shrink: 0;
+}

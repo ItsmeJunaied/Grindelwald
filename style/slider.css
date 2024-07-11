@@ -1,0 +1,150 @@
+.imageSlider{
+padding: 100px 0;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F9F9F9;
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 200px;
+    margin-top: 70px;
+    margin-bottom: 170px;
+    margin-left: 325px;
+}
+
+.slider-text h1 {
+    color: #1B3936;
+    font-family: 'Boska', serif;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.slider-text p {
+    color: #1B3936;
+    font-family: "Switzer Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.slider-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 325px;
+}
+
+.slider-inner {
+    display: flex;
+    gap: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    width: fit-content;
+    background-color: white;
+    width: 378px;
+    height: 477px;
+    flex-shrink: 0;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card:hover {
+    transform: translateY(-40px);
+}
+
+.card-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -50px;
+    margin-bottom: 35px;
+    background: #FFFFFF;
+    transition: height 0.3s ease-in-out;
+    height: 130px;
+    overflow: hidden;
+    box-shadow: #75FF69;
+
+
+}
+
+.card:hover .card-text {
+    height: 250px;
+}
+
+.card-text p {
+    color: black;
+    margin: 0;
+    padding-left: 15px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.card-text h1 {
+    color: black;
+    margin: 0;
+    font-size: medium;
+    padding-left: 15px;
+    padding-top: 20px;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.more-text {
+    opacity: 0.5;
+    max-height: 20px;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .more-text {
+    opacity: 1;
+    max-height: none;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.slider-controls button {
+    background-color: #1B3936;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    color: white;
+    border: 2px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.slider-controls button:hover {
+    background-color: #75FF69;
+    color: #1B3936;
+}
